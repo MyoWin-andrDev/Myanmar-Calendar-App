@@ -45,7 +45,8 @@ public class MainActivity extends AppCompatActivity {
 //                String mmMonth = mmdate.getMonthName();
 //                String mmDay = mmdate.getMoonPhase() + " " + mmdate.getFortnightDay();
 //                binding.txt.setText(String.format(Locale.getDefault() ,"%s %s %s", mmYear , mmMonth , mmDay));
-                  binding.txt.setText(mmdate.format("B y k, M p f r E n"));
+                  binding.txtYear.setText(mmdate.format("B y k"));
+                  binding.txtMonth.setText(mmdate.format("M p f r E n"));
             }
             catch(Exception e){
                 Toast.makeText(MainActivity.this, "Invalid Date", Toast.LENGTH_SHORT).show();

@@ -7,18 +7,28 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/txt"
+        android:id="@+id/txtYear"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/txtMonth"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtMonth"
         android:layout_width="wrap_content"
         android:layout_above="@+id/etDate"
         android:layout_height="wrap_content"
-        android:text="Myanmar Date"
+        android:text=""
         android:textSize="20dp"
         android:layout_centerHorizontal="true"/>
 
     <EditText
         android:id="@+id/etDate"
         android:layout_width="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:hint="01/05/2000"
